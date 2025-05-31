@@ -1,5 +1,9 @@
 /*** Spinner Start ***/
 /*** Spinner ***/
+
+.active{
+    color: #E8B113;
+}
 #spinner {
     opacity: 0;
     visibility: hidden;
@@ -28,7 +32,34 @@
     font-weight: 600;
     transition: .5s;
 }
-
+.btn-login {
+    cursor: pointer;
+    border-radius: 3px;
+    background-color: #e8b113;
+    color: #fff;
+    border: none;
+    height: 48px;
+    width: 100%;
+    margin-right: 15px;
+    transition: background-color ease 0.2s;
+}
+.btn-login:hover{
+background-color: #000;
+}
+.btn-exp-guide {
+    cursor: pointer;
+    border-radius: 3px;
+    color: #e8b113;
+    border: 4px solid #e8b113;
+    background-color: transparent;
+    padding: 0 40px;
+    height: 48px;
+    transition: background-color ease 0.2s;
+}
+.btn-exp-guide:hover{
+    border-color: #000;
+    color: #000;
+}
 .btn-square {
     width: 32px;
     height: 32px;
@@ -953,41 +984,84 @@
 
 
 /*** Footer Start ***/
-.footer {
-    background: var(--bs-dark);
+
+/* new footer */
+
+.tpa-footer{
+  color: #ffffff;
+  position: relative;
+  height: 92vh;
+ background-image: url('/img/footer-bg.jpg');
+ background-repeat: no-repeat;
+ background-size: cover;
 }
 
-.footer .footer-item a {
-    line-height: 35px;
-    color: var(--bs-body);
-    transition: 0.5s;
+.tpa-footer::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 1;
+}
+.footer-content{
+  position: relative;
+    z-index: 2;
+    text-align: center;
+    padding-top: 80px;
+    height: 100%;
+}
+.footer-content .logo .bi{
+  font-size: 5rem;
+  color: #ffffff;
+}
+.footer-content h1{
+  font-weight: bold;
+}
+.footer-nav{
+  margin-top: 30px;
+}
+.footer-nav a{
+    color: #ffc629;
+  display: inline-block;
+}
+.bot-foot{
+  width: 100%;
+  height: 40px;
+  display: flex;
+align-items: center;
+justify-content: center;
+  border-top: 1px solid #717171;
+}
+.bot-foot p{
+  margin-bottom: 0;
+  color: #ccc;
+}
+.foot-top-cont p{
+  width: 60%;
+  color: #ccc;
+}
+.foot-top-cont {
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.foot-top-cont .small-line{
+  width: 100px;
+  border-radius: 12px;
+  height: 4px;
+  margin-top: 20px;
+  background-color: #e8b113;
 }
 
-.footer .footer-item p {
-    /* line-height: 35px; */
-}
 
-.footer .footer-item a:hover {
-    letter-spacing: 1px;
-    color: var(--bs-primary);
-}
 
-.footer .footer-item .footer-btn a,
-.footer .footer-item .footer-btn a i {
-    transition: 0.5s;
-}
 
-.footer .footer-item .footer-btn a:hover {
-    background: var(--bs-white);
-}
-
-.footer .footer-item .footer-btn a:hover i {
-    color: var(--bs-primary) !important;
-}
-.footer img{
-    height: 100px;
-    width: 100%;
-}
 
 /*** Footer End ***/
 
@@ -1454,7 +1528,7 @@
     text-align: center;
     cursor: pointer;
     margin-right: 16px;
-    background-color:  #ffc629;
+    background-color:  #E8B113;
 }
 
 .app-photos .bbb_nav:last-child {
@@ -1498,7 +1572,7 @@
  
 } */
 .left-border{
-    border-left: 5px solid#ffc629;
+    border-left: 5px solid#E8B113;
 }
 
 
@@ -1667,7 +1741,153 @@ font-weight: 700;
 .privacy table p{
     color: #000;
 }
-/* responsvie */
+
+
+/* parts */
+.buyer-home{
+  height: 100vh;
+
+  background-image: url('/img/hero-bg2.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}
+.buyer-home .overlay{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+  background-color: #000;
+}
+.buyer-hero-content{
+  position: relative;
+z-index: 10;
+}
+.buyer-hero-content .bi{
+  color: #fff;
+  font-size: 7rem;
+}
+.buyer-hero-content h4{
+  color: #fff;
+  text-transform: capitalize;
+}
+.glass-bg {
+    padding: 5px 15px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.buyer-hero-content p{
+  color: #aeaeae;
+
+}
+.buyer-sub-section{
+  padding: 40px 0;
+}
+.buyer-sub-section p:first-of-type{
+  color: #404040;
+  font-size: 1.2rem;
+}
+.buyer-sub-section img{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.buyer-products{
+  background-color: #f1f1f1;
+  padding: 40px 0;
+}
+.buyer-product-card{
+  position: relative;
+  border-radius: 4px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  background-color: #fff;
+}
+.buyer-product-card:hover .overlay{
+  opacity: 0.4;
+}
+.buyer-product-card .overlay{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease;
+  background-color: #000;
+}
+.buyer-product-img{
+  width: 100%;
+  height: 100%;
+  background-color: #ede7db;
+}
+.buyer-product-img img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.buyer-product-title{
+ padding: 30px 0;
+}
+.buyer-product-title h4{
+  margin-left: 10px;
+}
+.vimi{
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+.vimi img{
+  height: 100%;
+  width: 60%;
+  object-fit: contain;
+}
+.our-mis{
+  padding: 10px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  color: #fff;
+}
+.our-vis{
+  padding: 10px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #499ed7;
+  color: #fff;
+}
+.our-vis h3{
+  color: #fff;
+}
+
+.country-export{
+  padding: 40px 0;
+}
+.country-export h3{
+  text-transform: capitalize;
+}
+.country-export img{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.country-thumb{
+  margin: 10px 15px;
+}
+.country-thumb img{
+  border-radius: 8px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  height: 60px;
+  width: auto;
+}
+
+/* ************************************ responsvie ******************************************** */
 
 /* For Desktop View */
 @media screen and (min-width: 1024px) {

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Partco</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+        <!--fav icons -->
+        <link rel="icon" type="image/x-icon" href="/img/TPAround.png">
+
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+
+    <!-- Navbar & Hero Start -->
+       <div class="container-fluid nav-bar sticky-top px-0 px-lg-4 py-2 py-lg-0">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a href="index.html" class="navbar-brand p-0">
+                    <!-- <h1 class="display-6 text-primary"><i class="fas fa-car-alt me-3"></i></i>Partco</h1> -->
+                    <img src="img/Partcodark.png" alt="Logo" height="30px" width="auto">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto py-0">
+                        
+                        <a href="App.html" class="nav-item nav-link">Solution</a>
+                        <a href="parts.html" class="nav-item nav-link active">Parts</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <a href="https://play.google.com/store/apps/details?id=com.siderealdot.thepartsapp&pcampaignid=web_share" class="btn btn-primary rounded-pill py-2 px-4">Get Started</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar & Hero End -->
+
+
+
+<!---mid -->
+ <div class="buyer-home d-flex align-items-center justify-content-center">
+      <div class="container ">
+      <div class='row buyer-hero-content'>
+        
+        <div class="col-xl-8 glass-bg">
+        <h4 class='mb-1 mt-2'>Tell Us what you need?</h4>
+        <p>Using Partco to Navigate International Trade Your Way!</p>
+        <div class="form-login row">
+          <div class="col-xl-4 col-lg-4 col-sm-12 col-12">
+            <div class="form-floating mb-3 ">
+              <input type="text" class="form-control" id="name" placeholder="Name" name='name'  
+              onChange={handlechange}/>
+              <label htmlFor="name">Name</label>
+        
+            </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-sm-12 col-12">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="designation" placeholder="Your Designation"  
+             onChange={handlechange} />
+              <label htmlFor="designation">Designation</label>
+              
+
+            </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-sm-12 col-12">
+            <div class="form-floating mb-3 ">
+              <input type="text" class="form-control" id="company" placeholder="Company Name" name='company' 
+               onChange={handlechange}/>
+              <label htmlFor="company">Company Name</label>
+            
+            </div>
+            </div>
+           
+             <div class="col-xl-4 col-lg-4 col-sm-12 col-12">
+              <div class="form-floating mb-3 ">
+              <input type="text" class="form-control" id="gst" placeholder="GST No." name='gst' 
+               onChange={handlechange}/>
+              <label htmlFor="gst">GST No.</label>
+         
+            </div>
+           
+            </div>
+            <div class="col-xl-4 col-lg-4 col-sm-12 col-12">
+            
+                <div class="form-floating mb-3 ps-0">
+                  <input type="tel" class="form-control" id="phone" placeholder="Phone" name='phone' 
+                   onChange={handlechange}/>
+                 <label htmlFor="phone">Phone</label>
+               
+                 </div>
+             
+            </div>
+            <div class="col-xl-4 col-lg-4 col-sm-12 col-12">
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="email" placeholder="Email" name='email' 
+               onChange={handlechange}/>
+              <label htmlFor="email">Email</label>
+         
+            </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-sm-12 col-12">
+            <div class="form-floating mb-3">
+              <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                <option selected>Select</option>
+                <option value="1">India</option>
+                <option value="2">USA</option>
+                <option value="3">China</option>
+              </select>
+              <label for="floatingSelect">Country</label>
+          </div>
+
+            </div>
+          
+            <div class="col-xl-4 col-lg-4 col-sm-12 col-12">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="city" placeholder="City" name='city' 
+              onChange={handlechange}/>
+              <label htmlFor="city">City</label>
+           
+            </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-sm-12 col-12">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="state" placeholder="Country name" name='state'
+              onChange={handlechange}/>
+              <label htmlFor="state">State</label>
+          
+            </div>
+            </div>
+          
+            <div class="col-xl-6 col-lg-6 col-sm-12 col-12">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="zip" placeholder="Zip code" name='zip' 
+              onChange={handlechange}/>
+              <label htmlFor="zip">Zip code</label>
+           
+            </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-sm-12 col-12">
+            <div class="form-floating mb-3">
+              <input type="text" name='product' class="form-control" id="product" placeholder="Product Name" 
+              onChange={handlechange} />
+              <label htmlFor="product">Product </label>
+             
+            </div>
+            </div>
+          
+            
+            <div class="col-xl-12 col-lg-12 col-sm-12 col-12">
+            <button class="btn-login w-100 " onClick={handleSubmit}>Submit</button>
+            </div>
+          </div>
+        
+        </div>
+      
+      </div>
+        <div class="overlay"></div>
+      </div>
+     </div>
+
+     <div class='buyer-sub-section'>
+      <div class="container ">
+        <div class="row d-flex align-items-center">
+          <div class="col-xl-6 col-lg-6 col-sm-12 col-12 ">
+             <img src="img/craneparts.png" alt="Crane part" />
+          </div>
+          <div class="col-xl-6 col-lg-6 col-sm-12 col-12">
+            <h3 class='mb-4'>The Parts Company</h3>
+            <p><strong>We are aware that change is not always simple</strong> </p>
+            <p>
+            To be the leading platform dedicated to providing top-quality spare parts for JCB
+             and CNH machinery through a user-friendly app, ensuring reliability, efficiency, and exceptional customer satisfaction.
+            </p>
+            <p>
+            Our mission is to connect genuine buyers with authenticated vendors, ensuring the availability of high-quality spare 
+            parts for JCB and CNH machinery. We aim to streamline the procurement process with reliable quality checks, competitive pricing, 
+            and authentic packaging while empowering vendors through advanced catalog management, specialized marketing,
+             and product promotion services.
+            </p>
+            <a href="https://thepartsapp.in/" target="_blank"><button class='btn-exp-guide mt-5'>Read More</button></a>
+          </div>
+        </div>
+      </div>
+     </div>
+
+     <div class='buyer-products'>
+      <div class="container">
+      <h3 class='text-center mb-5'>Our Products</h3>
+      <div class="row gy-5">
+        <div class="col-xl-4 col-lg-4 col-sm-6 col-12">
+          <a href="https://play.google.com/store/apps/details?id=com.siderealdot.thepartsapp&pcampaignid=web_share" target="_blank" >
+          <div class="buyer-product-card">
+            <div class="buyer-product-img">
+             <img src="img/engine.png" alt="" />
+            </div>
+            <div class="buyer-product-title">
+              <h4>Engine</h4>
+            </div>
+            <div class="overlay"></div>
+          </div>
+          </a>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-sm-6 col-12">
+        <a href="https://play.google.com/store/apps/details?id=com.siderealdot.thepartsapp&pcampaignid=web_share" target="_blank" >
+        <div class="buyer-product-card">
+            <div class="buyer-product-img">
+             <img src="img/Drivetrain.jpg" alt="" />
+            </div>
+            <div class="buyer-product-title">
+              <h4>Drivetrain</h4>
+            </div>
+            <div class="overlay"></div>
+          </div>
+        </a>
+      
+        </div>
+        <div class="col-xl-4 col-lg-4 col-sm-6 col-12">
+         <a href="https://play.google.com/store/apps/details?id=com.siderealdot.thepartsapp&pcampaignid=web_share" target="_blank" >
+        <div class="buyer-product-card">
+            <div class="buyer-product-img">
+             <img src="img/Hydraulics.jpg" alt="" />
+            </div>
+            <div class="buyer-product-title">
+              <h4>Hydraulics</h4>
+            </div>
+          <div class="overlay"></div>
+          </div>
+        </a>
+       </div>
+        <div class="col-xl-4 col-lg-4 col-sm-6 col-12">
+        <a href="https://play.google.com/store/apps/details?id=com.siderealdot.thepartsapp&pcampaignid=web_share" target="_blank" >
+        <div class="buyer-product-card">
+            <div class="buyer-product-img">
+             <img src="img/701-Y13721.png" alt="" />
+            </div>
+            <div class="buyer-product-title">
+              <h4>Electrical</h4>
+            </div>
+            <div class="overlay"></div>
+          </div>
+        </a>
+         </div>
+        <div class="col-xl-4 col-lg-4 col-sm-6 col-12">
+        <a href="https://play.google.com/store/apps/details?id=com.siderealdot.thepartsapp&pcampaignid=web_share" target="_blank" >
+        <div class="buyer-product-card">
+            <div class="buyer-product-img">
+             <img src="img/32-9013003.png" alt="" />
+            </div>
+            <div class="buyer-product-title">
+              <h4>Filters</h4>
+            </div>
+            
+          <div class="overlay"></div>
+          </div>
+          </a>
+       
+        </div>
+        <div class="col-xl-4 col-lg-4 col-sm-6 col-12">
+        <a href="https://play.google.com/store/apps/details?id=com.siderealdot.thepartsapp&pcampaignid=web_share" target="_blank" >
+        <div class="buyer-product-card">
+            <div class="buyer-product-img">
+             <img src="img/fixing.jpg" alt="" />
+            </div>
+            <div class="buyer-product-title">
+              <h4>Fixings & Fasteners</h4>
+            </div>
+             <div class="overlay"></div>
+          </div>
+          </a>
+      
+        </div>
+      </div>
+      </div>
+     </div>
+
+     <div class="vimi">
+        <div class="row">
+          <div class="col-xl-6 col-lg-4 col-sm-12 d-flex justify-content-center">
+            <img src="img/vandm.jpg" alt="" />
+          </div>
+          <div class="col-xl-3 col-lg-4 col-sm-12 our-mis">
+            <div>
+              <h3 style="color: #fff;">Our Mission</h3>
+              <p>To offer export-import services that are tailored to the needs of the company.</p>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-sm-12 our-vis">
+            <div>
+             <h3>Our Vision</h3>
+             <p>To digitalise and globalise the business process for entrepreneurs worldwide.</p>
+            </div>
+          </div>
+        </div>
+     </div>
+
+     <div class="country-export">
+      <div class="container">
+            <h3 class='text-center mb-5'>We Exports world wide</h3>
+            <div class="d-flex flex-wrap justify-content-center ">
+            <div class="country-thumb"><img src="img/china-02.png" alt="china" /></div>
+            <div class="country-thumb"><img src="img/newziland.png" alt="newziland" /></div>
+            <div class="country-thumb"><img src="img/sudaan-03.png" alt="sudaan" /></div>
+            <div class="country-thumb"><img src="img/singapore-04.png" alt="singapore" /></div>
+            <div class="country-thumb"><img src="img/southafrica-05.png" alt="southafrica" /></div>
+            <div class="country-thumb"><img src="img/turkey-06.png" alt="turkey" /></div>
+            <div class="country-thumb"><img src="img/Russia-07.png" alt="Russia" /></div>
+            <div class="country-thumb"><img src="img/denmark-08.png" alt="denmark" /></div>
+            <div class="country-thumb"><img src="img/india-10.png" alt="india" /></div>
+            <div class="country-thumb"><img src="img/neitherland-11.png" alt="neitherland" /></div>
+            <div class="country-thumb"><img src="img/norway-12.png" alt="norway" /></div>
+            <div class="country-thumb"><img src="img/Czech-republic-13.png" alt="Czech-republic" /></div>
+            <div class="country-thumb"><img src="img/iceland-14.png" alt="iceland" /></div>
+            <div class="country-thumb"><img src="img/us-09.png" alt="us" /></div>
+            <div class="country-thumb"><img src="img/itely-15.png" alt="itely" /></div>
+            <div class="country-thumb"><img src="img/colambia-16.png" alt="panam" /></div>
+            <div class="country-thumb"><img src="img/panam-17.png" alt="" /></div>
+            <div class="country-thumb"><img src="img/tanzania-18.png" alt="tanzania" /></div>
+            </div>
+           
+      </div>
+     </div>
+<!--mid-->
+  
+
+
+
+    <!-- Footer Start -->
+    <div class='tpa-footer text-center'>
+    <div class='footer-content d-flex flex-column justify-content-between align-items-center'>
+      <div class='foot-top-cont'>
+      <div class="logo"><img src="img/PartcoLogo@4x.png" alt="logosmall"  height='55px' width='auto'/></div>
+      <h1 class="text-white">PARTCO</h1>
+      <p >We acknowledge the traditional owners of country throughout Australia and recognise their 
+        continuing connection to land, waters and culture. We pay our respects to their Elders past, present and emerging.</p>
+        <div  class="small-line"></div>
+
+       <div class="footer-nav d-flex">
+          <a class="nav-link  " href="index.html">Home</a>
+          <a class="nav-link " href="about.html">About</a>
+          <a class="nav-link " href="contact.html">Contact</a>
+          <a class="nav-link " to='/help'>Help</a>
+          <a class="nav-link " to='/help'>Disclaimer</a>
+          <a class="nav-link " to='/help'>Privacy</a>
+       </div>
+
+      </div>
+     
+       <div class='bot-foot'>
+        <p>© 2025 Partco</p>
+       </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+  
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
