@@ -1,3 +1,20 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+}
+h1{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+h4{
+    font-family: "Montserrat", sans-serif; 
+        font-weight: 700;
+}
+p {
+    font-size: 20px;
+    line-height: 40px;
+}
 /*** Spinner Start ***/
 /*** Spinner ***/
 
@@ -97,11 +114,12 @@ background-color: #000;
     font-weight: normal;
 }
 
-.btn.btn-primary {
-    color: var(--bs-dark);
+.btn .btn-primary {
+    color:#000;
 }
 
-.btn.btn-primary:hover {
+.btn .btn-primary:hover {
+    color: #fff;
     background: var(--bs-secondary);
     border: 1px solid var(--bs-secondary);
 }
@@ -1746,7 +1764,6 @@ font-weight: 700;
 /* parts */
 .buyer-home{
   height: 100vh;
-
   background-image: url('/img/hero-bg2.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -1764,7 +1781,7 @@ font-weight: 700;
 }
 .buyer-hero-content{
   position: relative;
-z-index: 10;
+  z-index: 10;
 }
 .buyer-hero-content .bi{
   color: #fff;
